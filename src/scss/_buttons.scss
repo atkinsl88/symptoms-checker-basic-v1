@@ -1,0 +1,15 @@
+/** Button Styles **/
+@include media-breakpoint-up (xs) {
+  
+  button.primary {
+    background-color: $primary-color;
+    color: $primary-white;
+    border: $primary-color;;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    @extend p;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  
+}

@@ -1,0 +1,48 @@
+@include media-breakpoint-up (xs) {
+  .results-loading-background {
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+  }
+  .results-loading-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .results-loading-content {
+      .results-loading-text {
+        text-align: center;
+        max-width: 90ch;
+        h2, p {
+          color: $primary-white;
+        }
+      }
+      .results-loading-form {
+        .results-loading-fields {
+          margin: 2rem 4rem 2rem 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          input {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            border-radius: 10px;
+            border: unset;
+          }
+          button {
+            background-color: $primary-white;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
