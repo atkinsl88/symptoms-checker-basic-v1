@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 // Imports for fundementals to load first
 @import './_variables.scss';
 @import './_breakpoints';
