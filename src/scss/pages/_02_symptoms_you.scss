@@ -1,6 +1,6 @@
 @include media-breakpoint-up (xs) {
   .symptoms-you {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +36,10 @@
         }
       }
     }
+    button {
+      margin-top: 2rem;
+      float: right;
+    }
   }
 }
 
@@ -44,6 +48,7 @@
     .symptoms-you-wrapper {
       display: flex;
       flex-direction: row;
+      align-items: flex-end;
     }
   }
 }

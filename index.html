@@ -1,35 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Symptoms Checker</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./dist/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <title>Symptoms Checker</title>
-</head>
+  <body>
 
-<body>
-  <div class="start-screen-background">
-    <img src="./src/images/background-image.jpg" alt="Background Image">
-  </div>
-  <div class="start-screen-wrapper container">
-    <img class="start-screen-rectangle" src="./src/images/rectangle.png" alt="Rectangle">
-    <div class="start-screen-content">
-      <div class="start-screen-text">
-        <h1>Symtpoms</br> Checker</h1>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    <div>
+      <div class="start-screen-background">
+        <img src="./src/images/background-image.jpg" alt="Background Image">
       </div>
-      <div class="start-screen-button">
-        <form action="/pages/symptoms-you-feel.html">
-          <button class="primary" type="submit">Start</button>
-       </form>
+      <div class="start-screen-wrapper container">
+        <img class="start-screen-rectangle" src="./src/images/rectangle.png" alt="Rectangle">
+        <div class="start-screen-content">
+          <div class="start-screen-text">
+            <h1>Symtpoms</br> Checker</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+          <div class="start-screen-button">
+            <a href="#symptoms-you-feel"><button class="primary">Start</button></a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
 
+    <div class="symptoms-you container" id="symptoms-you-feel">
+      <div class="symptoms-you-content">
+        <div class="symptoms-you-text">
+          <h2>Select the symptoms you feel</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor,
+            ac nunc libero urna, feugiat.
+          </p>
+        </div>
+      </div>
+      <div class="symptoms-you-wrapper">
+        <div class="symptoms-you-image">
+          <img
+            src="./src/images/symptoms-you-feel.png"
+            alt="Background Image"
+          />
+        </div>
+        <div class="symptoms-you-form">
+          <form action="javascript:void(0);">
+            <div class="symptoms-you-select">
+              <input
+                name="feel"
+                type="radio"
+                id="feel1"
+                value="Aenean gravida accumsan"
+              />
+              <label for="symptoms-you-feel-option-1"
+                >Aenean gravida accumsan</label
+              >
+              <p>
+                Cras et condimentum sem, in ultricies felis. Sed erat augue,
+                semper tempus libero vel, placerat placerat nisi. Aliquam lorem
+                tellus, ultricies auctor erat.
+              </p>
+            </div>
+
+            <div class="symptoms-you-select">
+              <input
+                name="feel"
+                type="radio"
+                id="feel2"
+                value="Nunc elementum tincidunt magna"
+              />
+              <label for="symptoms-you-feel-option-2"
+                >Nunc elementum tincidunt magna</label
+              >
+              <p>
+                Duis vel dolor vel tellus semper eleifend euismod sit amet
+                felis. Cras et condimentum sem, in ultricies felis. Sed erat
+                augue, semper tempus libero vel, placerat placerat nisi.
+              </p>
+            </div>
+
+            <div class="symptoms-you-select">
+              <input
+                name="feel"
+                type="radio"
+                id="feel3"
+                value="Vestibulum condimentum"
+              />
+              <label for="symptoms-you-feel-option-3"
+                >Vestibulum condimentum</label
+              >
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Donec molestie, sapien vel
+                condimentum scelerisque, est sem varius
+              </p>
+            </div>
+            <a href="#symptoms-you-see"><button class="primary" onclick="fn1()" id="feel-button">Submit</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="symptoms-you container" id="symptoms-you-see">
+      <div class="symptoms-you-content">
+        <div class="symptoms-you-text">
+          <h2>Select the symptoms you see</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+        </div>
+      </div>
+      <div class="symptoms-you-wrapper">
+        <div class="symptoms-you-image">
+          <img src="./src/images/symptoms-you-see.png" alt="Background Image">
+        </div>
+        <div class="symptoms-you-form">
+          <form action="javascript:void(0);">
+            <div class="symptoms-you-select">
+              <input 
+                name="see"
+                type="radio" 
+                id="see1" 
+                value="Quisque faucibus ac purus sed"
+              >
+              <label for="scales">Quisque faucibus ac purus sed</label>
+              <p>Cras et condimentum sem, in ultricies felis. Sed erat augue, semper tempus libero vel, placerat placerat nisi. Aliquam lorem tellus, ultricies auctor erat.</p>
+            </div>
+            <div class="symptoms-you-select">
+              <input 
+                name="see"
+                type="radio" 
+                id="see2" 
+                value="At convallis est mauris eget"
+              >
+              <label for="scales">At convallis est mauris eget</label>
+              <p>Duis vel dolor vel tellus semper eleifend euismod sit amet felis. Cras et condimentum sem, in ultricies felis. Sed erat augue, semper tempus libero vel, placerat placerat nisi. </p>
+            </div>
+            <div class="symptoms-you-select">
+              <input 
+                name="see"
+                type="radio" 
+                id="see3" 
+                value="Pellentesque habitant"
+              >
+              <label for="scales">Pellentesque habitant</label>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie, sapien vel condimentum scelerisque, est sem varius</p>
+            </div>
+            <a href="#symptoms-slowing-you"><button class="primary" onclick="fn2()" id="see-button">Submit</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="symptoms-you container" id="symptoms-slowing-you">
+      <div class="symptoms-you-content">
+        <div class="symptoms-you-text">
+          <h2>Select the symptoms slowing you down</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+        </div>
+      </div>
+      <div class="symptoms-you-wrapper">
+        <div class="symptoms-you-image">
+          <img src="./src/images/symptoms-you-see.png" alt="Background Image">
+        </div>
+        <div class="symptoms-you-form">
+          <form action="javascript:void(0);">
+            <div class="symptoms-you-select">
+              <input 
+                name="slow"
+                type="radio" 
+                id="slow1" 
+                value="Donec pharetra felis"
+              >
+              <label for="scales">Donec pharetra felis</label>
+              <p>Cras et condimentum sem, in ultricies felis. Sed erat augue, semper tempus libero vel, placerat placerat nisi. Aliquam lorem tellus, ultricies auctor erat.</p>
+            </div>
+            <div class="symptoms-you-select">
+              <input 
+                name="slow"
+                type="radio" 
+                id="slow2" 
+                value="Aliquam tristique sem"
+              >
+              <label for="scales">Aliquam tristique sem</label>
+              <p>Duis vel dolor vel tellus semper eleifend euismod sit amet felis. Cras et condimentum sem, in ultricies felis. Sed erat augue, semper tempus libero vel, placerat placerat nisi. </p>
+            </div>
+            <div class="symptoms-you-select">
+              <input 
+                name="slow"
+                type="radio" 
+                id="slow3" 
+                value="Vestibulum condimentum"
+              >
+              <label for="scales">Vestibulum condimentum</label>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie, sapien vel condimentum scelerisque, est sem varius</p>
+            </div>
+            <a href="#results"><button class="primary" onclick="fn3()" id="see-button">Submit</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="results-loading-background">
+        <img src="./src/images/background-image.jpg" alt="Background Image">
+      </div>
+      <div class="results-loading-wrapper container">
+        <div class="results-loading-content">
+          <div class="results-loading-text">
+            <h2>Your results are loading...</h2>
+            <p>Your results will be ready in less than 30 seconds. In the meantime, enter your name and email address to be in with a chance to of winning £1,000 tax free cash.</p>
+          </div>
+          <div class="results-loading-form">
+            <form class="results-loading-fields" action="/pages/symptoms-you-feel.html">
+              <input type="name" name="Name"></input>
+              <input type="email" name="Contact-Email"></input>
+              <button class="primary" type="submit">Enter</button>
+           </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="results container">
+      <div class="results-wrapper">
+        <div class="results-content">
+          <div class="results-text">
+            <h2>Submit Results</h2>
+            <p>You picked:</p>
+            <ul>
+              <li id="userFeel">xxx</li>
+              <li id="userSee">xxx</li>
+              <li id="userSlow">xxx</li>
+            </ul>
+            <p>
+              Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
+              enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+            </p>
+          </div>
+          <div class="results-box-wrapper">
+            <div class="results-box-row">
+              <div class="results-box">
+                <p>xxx</p>
+              </div>
+              <div class="results-box">
+                <p>xxx</p>
+              </div>
+              <div class="results-box">
+                <p>xxx</p>
+              </div>
+            </div>
+            <div class="results-box-row">
+              <div class="results-box">
+                <p>xxx</p>
+              </div>
+              <div class="results-box">
+                <p>xxx</p>
+              </div>
+              <div class="results-box">
+                <p>xxx</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-next">
+          <div class="results-image">
+            <img src="./src/images/doctors-cross.png" alt="Background Image" />
+          </div>
+          <div class="results-button">
+            <button class="primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="whats-next-background">
+        <img src="./src/images/background-half-image.jpg" alt="Background Image">
+      </div>
+      <div class="whats-next-wrapper container">
+        <div class="whats-next-content">
+          <h2>What's next?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque animi laborum cumque rerum eius nisi reiciendis voluptate ex deserunt enim fugit quo excepturi impedit sit, quia quis ipsum odit veniam.</p>
+          <img src="./src/images/video.png" alt="Background Image">
+        </div>
+        <div class="whats-next-details">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/scripts.js"></script>
+  </body>
 </html>
