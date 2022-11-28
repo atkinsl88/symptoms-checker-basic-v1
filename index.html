@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Symptoms Checker</title>
+    <title>Symptom Checker</title>
   </head>
 
   <body>
@@ -37,7 +37,7 @@
     <div class="symptoms-you container" id="symptoms-you-feel">
       <div class="symptoms-you-content">
         <div class="symptoms-you-text">
-          <h2>Select the symptoms you feel</h2>
+          <h2>Select the symptom you feel</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
             nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor,
@@ -104,7 +104,7 @@
                 condimentum scelerisque, est sem varius
               </p>
             </div>
-            <a href="#symptoms-you-see"><button class="primary" onclick="fn1()" id="feel-button">Submit</button></a>
+            <a href="#symptoms-you-see" class="primary" onclick="fn1()" id="feel-button">Submit</a>
           </form>
         </div>
       </div>
@@ -113,7 +113,7 @@
     <div class="symptoms-you container" id="symptoms-you-see">
       <div class="symptoms-you-content">
         <div class="symptoms-you-text">
-          <h2>Select the symptoms you see</h2>
+          <h2>Select the symptom you see</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
         </div>
       </div>
@@ -153,7 +153,7 @@
               <label for="scales">Pellentesque habitant</label>
               <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie, sapien vel condimentum scelerisque, est sem varius</p>
             </div>
-            <a href="#symptoms-slowing-you"><button class="primary" onclick="fn2()" id="see-button">Submit</button></a>
+            <a href="#symptoms-slowing-you" class="primary" onclick="fn2()" id="see-button">Submit</a>
           </form>
         </div>
       </div>
@@ -162,7 +162,7 @@
     <div class="symptoms-you container" id="symptoms-slowing-you">
       <div class="symptoms-you-content">
         <div class="symptoms-you-text">
-          <h2>Select the symptoms slowing you down</h2>
+          <h2>Select the symptom slowing you down</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
         </div>
       </div>
@@ -202,14 +202,14 @@
               <label for="scales">Vestibulum condimentum</label>
               <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie, sapien vel condimentum scelerisque, est sem varius</p>
             </div>
-            <a href="#results"><button class="primary" onclick="fn3()" id="see-button">Submit</button></a>
+            <a href="#results-loading" class="primary" onclick="fn3()" id="slow-button">Submit</a>
           </form>
         </div>
       </div>
     </div>
 
     <div>
-      <div class="results-loading-background">
+      <div class="results-loading-background" id="results-loading">
         <img src="./src/images/background-image.jpg" alt="Background Image">
       </div>
       <div class="results-loading-wrapper container">
@@ -219,17 +219,17 @@
             <p>Your results will be ready in less than 30 seconds. In the meantime, enter your name and email address to be in with a chance to of winning £1,000 tax free cash.</p>
           </div>
           <div class="results-loading-form">
-            <form class="results-loading-fields" action="/pages/symptoms-you-feel.html">
+            <form class="results-loading-fields" action="">
               <input type="name" name="Name"></input>
               <input type="email" name="Contact-Email"></input>
-              <button class="primary" type="submit">Enter</button>
+              <a href="#results" class="secondary" id="slow-button">Submit</a>
            </form>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="results container">
+    <div class="results container" id="results">
       <div class="results-wrapper">
         <div class="results-content">
           <div class="results-text">
@@ -276,13 +276,13 @@
             <img src="./src/images/doctors-cross.png" alt="Background Image" />
           </div>
           <div class="results-button">
-            <button class="primary" type="submit">Submit</button>
+            <a href="#whats-next" class="primary">Submit</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div>
+    <div id="whats-next">
       <div class="whats-next-background">
         <img src="./src/images/background-half-image.jpg" alt="Background Image">
       </div>

@@ -11,5 +11,31 @@
     text-transform: uppercase;
     margin-bottom: 0;
   }
+
+  a.primary {
+    background-color: $primary-color;
+    color: $primary-white;
+    border: $primary-color;;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    @extend p;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    float: right;
+  }
+
+  a.secondary {
+    background-color: $primary-white;
+    color: $primary-color;
+    border: $primary-white;;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    @extend p;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    float: right;
+  }
   
 }

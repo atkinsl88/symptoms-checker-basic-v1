@@ -67,7 +67,7 @@
   li {
     @extend %paragraph;
     font-size: $mob-font-size-md;
-    line-height: $mob-font-size-sm * 1.5;
+    line-height: 1.5rem;
     margin-left: 1.5rem;
   }
 
