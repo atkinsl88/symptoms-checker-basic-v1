@@ -37,5 +37,15 @@
     margin-top: 2rem;
     float: right;
   }
+
+  a.skip {
+    color: $primary-white;
+    @extend p;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    float: right;
+  }
   
 }

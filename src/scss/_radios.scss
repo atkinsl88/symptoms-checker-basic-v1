@@ -1,0 +1,9 @@
+/** Radio Styles **/
+@include media-breakpoint-up (xs) {
+
+  input[type="radio"] {
+    height: 20px;
+    width: 20px;
+  }
+  
+}

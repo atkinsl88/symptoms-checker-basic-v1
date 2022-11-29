@@ -28,6 +28,9 @@
           p {
             color: $primary-white;
           }
+          &:hover {
+            background-color: $third-color;
+          }
         }
       }
     }

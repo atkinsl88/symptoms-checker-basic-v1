@@ -49,8 +49,7 @@
           <h2>Select the symptom you feel</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor,
-            ac nunc libero urna, feugiat.
+            nunc ante.
           </p>
         </div>
       </div>
@@ -123,7 +122,7 @@
       <div class="symptoms-you-content">
         <div class="symptoms-you-text">
           <h2>Select the symptom you see</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
       </div>
       <div class="symptoms-you-wrapper">
@@ -172,12 +171,12 @@
       <div class="symptoms-you-content">
         <div class="symptoms-you-text">
           <h2>Select the symptom slowing you down</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="symptoms-you-wrapper">
         <div class="symptoms-you-image">
-          <img src="./src/images/symptoms-you-see.png" alt="Background Image">
+          <img src="./src/images/symptoms-slowing-you-down.png" alt="Background Image">
         </div>
         <div class="symptoms-you-form">
           <form action="javascript:void(0);">
@@ -223,15 +222,19 @@
       </div>
       <div class="results-loading-wrapper container">
         <div class="results-loading-content">
+          <div class="results-loader">
+            <div class="loader"></div>
+          </div>
           <div class="results-loading-text">
             <h2>Your results are loading...</h2>
-            <p>Your results will be ready in less than 30 seconds. In the meantime, enter your name and email address to be in with a chance to of winning £1,000 tax free cash.</p>
+            <p>Your results will be ready in a moment. In the meantime, enter your name and email address to be in with a chance to of winning £1,000 tax free cash.</p>
           </div>
           <div class="results-loading-form">
             <form class="results-loading-fields" action="">
-              <input type="name" name="Name"></input>
-              <input type="email" name="Contact-Email"></input>
+              <input type="name" name="Name" placeholder="Name"></input>
+              <input type="email" name="Contact-Email" placeholder="Email address"></input>
               <a href="#results" class="secondary" id="slow-button">Submit</a>
+              <a href="#results" class="skip" id="skip">Skip for now</a>
            </form>
           </div>
         </div>
@@ -242,7 +245,7 @@
       <div class="results-wrapper">
         <div class="results-content">
           <div class="results-text">
-            <h2>Submit Results</h2>
+            <h2>Results</h2>
             <p>You picked:</p>
             <ul>
               <li id="userFeel">xxx</li>
@@ -251,31 +254,54 @@
             </ul>
             <p>
               Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
-              enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
-              Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+              enim. Faucibus amet etiam tincidunt rhoncus.
             </p>
           </div>
           <div class="results-box-wrapper">
             <div class="results-box-row">
-              <div class="results-box">
-                <p>xxx</p>
+              <div class="results-box tooltip">
+                <p>Integer eu</p>
+                <div class="tooltiptext">
+                  <h3>Integer eu</h3>
+                  <p>Suspendisse eu urna hendrerit, interdum sem in, porttitor urna. Integer vulputate turpis.</p>
+                </div>
               </div>
-              <div class="results-box">
-                <p>xxx</p>
+              <div class="results-box tooltip">
+                <p>Nullam placerat</p>
+                <div class="tooltiptext">
+                  <h3>Nullam placerat</h3>
+                  <p>Quisque nec turpis semper, mattis leo et, mollis dui.</p>
+                </div>
               </div>
-              <div class="results-box">
-                <p>xxx</p>
+              <div class="results-box tooltip">
+                <p>Duis mollis</p>
+                <div class="tooltiptext">
+                  <h3>Duis mollis</h3>
+                  <p>Quisque vulputate, nisi eget mattis condimentum.</p>
+                </div>
               </div>
             </div>
             <div class="results-box-row">
-              <div class="results-box">
-                <p>xxx</p>
+              <div class="results-box tooltip">
+                <p>Aliquam ac</p>
+                <div class="tooltiptext">
+                  <h3>Aliquam ac</h3>
+                  <p>Suspendisse dui metus, placerat a sollicitudin at, egestas vitae ante.</p>
+                </div>
               </div>
-              <div class="results-box">
-                <p>xxx</p>
+              <div class="results-box tooltip">
+                <p>Donec non</p>
+                <div class="tooltiptext">
+                  <h3>Donec non</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque libero et lobortis lacinia. Donec at enim a est eleifend ornare at semper est.</p>
+                </div>
               </div>
-              <div class="results-box">
-                <p>xxx</p>
+              <div class="results-box tooltip">
+                <p>Aliquam vulputate</p>
+                <div class="tooltiptext">
+                  <h3>Aliquam vulputate</h3>
+                  <p>Aenean vitae ante maximus tortor auctor pretium. Suspendisse quis tellus tincidunt, feugiat erat in, molestie erat.</p>
+                </div>
               </div>
             </div>
           </div>
