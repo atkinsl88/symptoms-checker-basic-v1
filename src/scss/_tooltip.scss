@@ -21,8 +21,8 @@
     padding: 2rem;
     border-radius: 6px;
     position: absolute;
-    bottom: 30px;
-    left: 120px;
+    bottom: -1px;
+    left: 161px;
     z-index: 1;
   
     /* Position the tooltip text - see examples below! */
@@ -39,5 +39,13 @@
   .tooltip:hover .tooltiptext {
       visibility: visible;
     }
+
+    .tooltip .tooltiptext:before {
+      content: "◀";
+      position: absolute;
+      bottom: 60px;
+      left: -12px;
+      color: $third-color;
+  }
 
 }

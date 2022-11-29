@@ -14,12 +14,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 2rem;
       .symptoms-you-image {
+        width: 40%;
         img {
-          max-width: 628px;
+          max-width: 400px;
         }
       }
       .symptoms-you-form {
+        width: 60%;
         .symptoms-you-select {
           padding: 1.5rem 2rem;
           margin-bottom: 1rem;
@@ -44,7 +47,6 @@
     .symptoms-you-wrapper {
       display: flex;
       flex-direction: row;
-      align-items: flex-end;
     }
   }
 }
